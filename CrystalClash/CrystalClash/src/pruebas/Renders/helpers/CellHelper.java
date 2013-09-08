@@ -60,7 +60,7 @@ public class CellHelper {
 			return attack_target_radius;
 		}
 		case MOVE_TARGET: {
-			return move_target;
+			return none;
 		}
 		default: {
 			return none;

@@ -1,5 +1,7 @@
 package pruebas.Entities;
 
+import pruebas.Renders.helpers.CellHelper;
+
 import com.badlogic.gdx.math.Vector2;
 
 public class GameObject {
@@ -21,6 +23,14 @@ public class GameObject {
 
 	public float getY() {
 		return position.y;
+	}
+
+	public float getCenterX() {
+		return position.x + CellHelper.CELL_WIDTH / 2;
+	}
+
+	public float getCenterY() {
+		return position.y + CellHelper.CELL_HEIGHT / 2;
 	}
 
 	public void setGrisPosition(int x, int y) {
